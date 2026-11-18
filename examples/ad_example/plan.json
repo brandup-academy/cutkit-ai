@@ -1,0 +1,141 @@
+{
+  "title": "Kopi Pagi Cold Brew",
+  "sentence": "帮我的冷萃咖啡 Kopi Pagi 做一条 15 秒广告，卖给早上赶时间的上班族",
+  "recipe": "product_showcase_15s",
+  "size": "9:16",
+  "brand": "brand.json",
+  "answers": {
+    "Who is it for?": "Office workers rushing in the morning",
+    "What is the one benefit to remember?": "Smooth cold brew, ready in 10 seconds",
+    "What should the viewer do (order, WhatsApp, visit)?": "WhatsApp to order"
+  },
+  "music": {
+    "prompt": "upbeat, modern, confident; no vocals",
+    "file": "assets/music.mp3"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "role": "hook",
+      "dur": 3,
+      "guide": {
+        "visual": "The most striking close-up of the product in motion (pour, splash, reveal). No text-heavy shot.",
+        "text": "A 3-5 word question or bold claim"
+      },
+      "image_prompt": "Extreme close-up, cold brew coffee pouring over clear ice in a glass, golden morning backlight, droplets, macro, shallow depth of field, vertical 9:16",
+      "video_prompt": "Slow-motion pour, ice cracks and shifts, camera pushes in slightly",
+      "text": [
+        "MORNING [[RUSH]]?"
+      ],
+      "anim": "typewriter",
+      "vo": "Wake up.",
+      "sfx_prompt": "Liquid pouring over ice, ice cracking, soft glass clink",
+      "fx": [
+        "grade",
+        "flash"
+      ],
+      "storyboard": "assets/b1.jpg",
+      "file": "assets/b1.mp4",
+      "vo_file": "assets/b1_vo.mp3",
+      "sfx_file": "assets/b1_sfx.mp3"
+    },
+    {
+      "id": "b2",
+      "role": "problem",
+      "dur": 3,
+      "guide": {
+        "visual": "The moment the customer needs it (tired morning, messy desk).",
+        "text": "Name the pain in 4-6 words"
+      },
+      "image_prompt": "A tired office worker at a bus stop at 7am checking the time, soft blue dawn light, realistic, vertical 9:16",
+      "video_prompt": "They yawn and glance at their watch, handheld feel",
+      "text": [
+        "没时间",
+        "等咖啡"
+      ],
+      "anim": "words",
+      "vo": "No time to queue for coffee?",
+      "sfx_prompt": "",
+      "fx": [],
+      "transition": "fade",
+      "storyboard": "assets/b2.jpg",
+      "file": "assets/b2.mp4",
+      "vo_file": "assets/b2_vo.mp3",
+      "sfx_file": "assets/b2_sfx.mp3"
+    },
+    {
+      "id": "b3",
+      "role": "product",
+      "dur": 4,
+      "guide": {
+        "visual": "Hero shot: product centred, clean background, slow push-in.",
+        "text": "Product name + the one benefit"
+      },
+      "image_prompt": "Hero product shot: a matte black bottle labelled Kopi Pagi on a clean cream background, soft studio light, condensation, centred, vertical 9:16",
+      "video_prompt": "Slow push-in, light sweeps across the bottle",
+      "text": [
+        "KOPI PAGI",
+        "[[10 秒]]就能喝"
+      ],
+      "anim": "words",
+      "vo": "Kopi Pagi cold brew. Ready in ten seconds.",
+      "sfx_prompt": "Soft whoosh and a bright shimmer",
+      "fx": [
+        "grade",
+        "sharpen"
+      ],
+      "transition": "slideleft",
+      "storyboard": "assets/b3.jpg",
+      "file": "assets/b3.mp4",
+      "vo_file": "assets/b3_vo.mp3",
+      "sfx_file": "assets/b3_sfx.mp3"
+    },
+    {
+      "id": "b4",
+      "role": "proof",
+      "dur": 2.5,
+      "guide": {
+        "visual": "Someone enjoying or using it; a real-looking result.",
+        "text": "One proof point the owner supplied (optional)"
+      },
+      "image_prompt": "The same office worker smiling, holding the black bottle while walking into a bright office lobby, vertical 9:16",
+      "video_prompt": "They take a sip and walk on with energy",
+      "text": [
+        "SMOOTH. COLD. READY."
+      ],
+      "anim": "highlight",
+      "vo": "",
+      "sfx_prompt": "",
+      "fx": [],
+      "storyboard": "assets/b4.jpg",
+      "file": "assets/b4.mp4",
+      "vo_file": "assets/b4_vo.mp3",
+      "sfx_file": "assets/b4_sfx.mp3"
+    },
+    {
+      "id": "b5",
+      "role": "cta",
+      "dur": 2.5,
+      "guide": {
+        "visual": "Product with brand colours, room for text.",
+        "text": "The call to action from the brand kit"
+      },
+      "image_prompt": "The black Kopi Pagi bottle on a desk beside a laptop, warm morning light, empty space in the upper third for text, vertical 9:16",
+      "video_prompt": "Gentle parallax, steam-free, calm",
+      "text": [
+        "[[WHATSAPP]]",
+        "TO ORDER"
+      ],
+      "anim": "pop",
+      "vo": "WhatsApp us to order.",
+      "sfx_prompt": "Short positive chime",
+      "fx": [],
+      "logo": true,
+      "storyboard": "assets/b5.jpg",
+      "file": "assets/b5.mp4",
+      "vo_file": "assets/b5_vo.mp3",
+      "sfx_file": "assets/b5_sfx.mp3"
+    }
+  ],
+  "_note": "A made-up product, written to show what a finished plan looks like."
+}

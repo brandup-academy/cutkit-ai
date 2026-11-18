@@ -1,0 +1,20 @@
+// Every effect and several transitions, horizontal. Create the media first:  python3 examples/make_demo_assets.py
+{
+  "out": "out/fx_16x9.mp4",
+  "size": "16:9",
+  "look": ["vignette"],
+  "shots": [
+    {"src": "demo_assets/clip_a.mp4", "start": 0, "dur": 2.0, "fx": ["grade", "flash"]},
+    {"src": "demo_assets/clip_b.mp4", "start": 0, "dur": 2.0, "fx": ["shake"], "transition": "slideleft"},
+    {"src": "demo_assets/clip_c.mp4", "start": 0, "dur": 2.0, "fx": ["glitch", "grain"], "transition": {"type": "circleopen", "dur": 0.5}},
+    {"src": "demo_assets/clip_a.mp4", "start": 2, "dur": 2.0, "speed": 2.0, "fx": ["bw"], "transition": "fadewhite"},
+    {"src": "demo_assets/clip_b.mp4", "start": 3, "dur": 2.0, "zoom": 0.25, "fx": ["warm", "sharpen"]}
+  ],
+  "cards": [
+    {"lines": ["EFFECTS [[DEMO]]"], "from": 0.3, "to": 1.8, "anim": "slide_up"},
+    {"lines": ["转场 · 调色 · [[抖动]]"], "from": 4.0, "to": 6.0, "anim": "slide_down", "accent": "#FFD23E"}
+  ],
+  "music": {"file": "demo_assets/music.mp3"},
+  "sfx_dir": "demo_assets/sfx",
+  "cues": [{"file": "boom.mp3", "at": 1.6}, {"file": "chime.mp3", "at": 5.3}]
+}

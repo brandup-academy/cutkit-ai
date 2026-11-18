@@ -1,0 +1,11 @@
+examples/demo_assets/
+examples/out/
+examples/ad_example/assets/
+examples/ad_example/out/
+examples/ad_example/project.json
+out/
+ads/
+__pycache__/
+*.pyc
+.DS_Store
+rules/my-preferences.md

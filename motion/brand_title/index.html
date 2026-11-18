@@ -1,0 +1,54 @@
+<!doctype html>
+<!-- Brand title card for HyperFrames (Apache-2.0 renderer). Placeholders {{...}} are filled by scripts/motion.py. -->
+<html lang="en" data-resolution="{{RESOLUTION}}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width={{W}}, height={{H}}" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root { --ground: {{BG}}; --ink: {{INK}}; --accent: {{ACCENT}}; --font-display: {{FONT}}; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: {{W}}px; height: {{H}}px; overflow: hidden; background: var(--ground); }
+      #root { position: relative; width: 100%; height: 100%; font-family: var(--font-display); color: var(--ink); }
+      #glow { position: absolute; left: 50%; top: 50%; width: {{GLOW}}px; height: {{GLOW}}px; margin: -{{GLOW_HALF}}px 0 0 -{{GLOW_HALF}}px;
+              border-radius: 50%; background: radial-gradient(circle, var(--accent) 0%, transparent 62%); opacity: 0; filter: blur(40px); }
+      #grid { position: absolute; inset: 0; opacity: 0;
+              background-image: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+              background-size: 90px 90px; }
+      #stack { position: absolute; left: {{MARGIN}}px; right: {{MARGIN}}px; top: 50%; transform: translateY(-50%); text-align: center; }
+      #kicker { font-size: {{KICK_SIZE}}px; letter-spacing: .32em; font-weight: 600; color: var(--accent); opacity: 0; }
+      #title { margin-top: 28px; font-size: {{TITLE_SIZE}}px; line-height: 1.02; font-weight: 800; letter-spacing: -0.02em; }
+      #title .w { display: inline-block; white-space: nowrap; }
+      #title .c { display: inline-block; opacity: 0; }
+      #bar { margin: 40px auto 0; height: 8px; width: 0; background: var(--accent); border-radius: 4px; }
+      #sub { margin-top: 36px; font-size: {{SUB_SIZE}}px; line-height: 1.35; font-weight: 500; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="{{DUR}}" data-width="{{W}}" data-height="{{H}}">
+      <div id="grid" class="clip" data-start="0" data-duration="{{DUR}}" data-track-index="0"></div>
+      <div id="glow" class="clip" data-start="0" data-duration="{{DUR}}" data-track-index="1"></div>
+      <div id="stack" class="clip" data-start="0" data-duration="{{DUR}}" data-track-index="2">
+        <div id="kicker">{{KICKER}}</div>
+        <h1 id="title">{{TITLE_SPANS}}</h1>
+        <div id="bar"></div>
+        <p id="sub">{{SUBTITLE}}</p>
+      </div>
+    </div>
+    <script>
+      const D = {{DUR}};
+      const tl = gsap.timeline({ paused: true });
+      tl.to("#grid", { opacity: 1, duration: 0.6, ease: "power2.out" }, 0)
+        .to("#glow", { opacity: 0.55, scale: 1.15, duration: 1.4, ease: "power2.out" }, 0)
+        .to("#kicker", { opacity: 1, y: -6, duration: 0.45, ease: "power3.out" }, 0.15)
+        .fromTo("#title .c", { opacity: 0, y: 70, rotateX: 50 }, { opacity: 1, y: 0, rotateX: 0, duration: 0.6, ease: "back.out(1.6)", stagger: 0.035 }, 0.3)
+        .to("#bar", { width: {{BAR_W}}, duration: 0.55, ease: "power3.inOut" }, 0.75)
+        .to("#sub", { opacity: 1, y: -8, duration: 0.5, ease: "power2.out" }, 1.0)
+        .to("#glow", { opacity: 0.3, duration: D - 1.6, ease: "sine.inOut" }, 1.4)
+        .to("#stack", { scale: 1.04, duration: D - 0.9, ease: "none" }, 0.9)
+        .to("#root", { opacity: 0, duration: 0.35, ease: "power1.in" }, D - 0.35);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

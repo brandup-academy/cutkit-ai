@@ -1,0 +1,14 @@
+{
+  "name": "Your Brand",
+  "accent": "#B0F03E",
+  "font": null,
+  "cjk_font": null,
+  "logo": null,
+  "logo_width": 0.3,
+  "logo_pos": "top-center",
+  "cta": [
+    "WHATSAPP US",
+    "TO ORDER"
+  ],
+  "notes": "Tone of voice, words to avoid, required disclaimers."
+}

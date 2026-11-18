@@ -1,0 +1,19 @@
+// Animated text demo. Create the media first:  python3 examples/make_demo_assets.py
+{
+  "out": "out/text_9x16.mp4",
+  "size": "9:16",
+  "look": ["bw", "vignette"],
+  "shots": [
+    {"src": "demo_assets/clip_b.mp4", "start": 0, "dur": 3.0},
+    {"src": "demo_assets/clip_b.mp4", "start": 3, "dur": 3.0},
+    {"src": "demo_assets/clip_c.mp4", "start": 0, "dur": 3.0},
+    {"src": "demo_assets/clip_c.mp4", "start": 3, "dur": 3.0}
+  ],
+  "cards": [
+    {"lines": ["ONE SENTENCE.", "ONE [[AD]]."], "from": 0.2, "to": 2.8, "anim": "typewriter"},
+    {"lines": ["不会剪辑", "也能做[[广告]]"], "from": 3.2, "to": 5.8, "anim": "words", "font_size": 84},
+    {"lines": ["SAY IT. SEE IT. SHIP IT."], "from": 6.2, "to": 8.8, "anim": "highlight"},
+    {"lines": ["[[50% OFF]]", "TODAY ONLY"], "from": 9.2, "to": 11.8, "anim": "pop", "font_size": 110}
+  ],
+  "music": {"file": "demo_assets/music.mp3"}
+}

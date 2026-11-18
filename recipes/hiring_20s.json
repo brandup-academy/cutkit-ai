@@ -1,0 +1,55 @@
+{
+  "name": "招聘广告 20 秒 / Hiring ad",
+  "size": "9:16",
+  "use_when": "Recruiting for a role.",
+  "questions": [
+    "Which role and location?",
+    "Two real reasons to join (pay range, hours, growth)?",
+    "How to apply?"
+  ],
+  "music": "optimistic, steady, corporate-light; no vocals",
+  "beats": [
+    {
+      "role": "hook",
+      "dur": 3,
+      "visual": "A person at work looking engaged, or the workplace at its best.",
+      "text": "WE'RE HIRING + role",
+      "anim": "typewriter",
+      "fx": [
+        "grade"
+      ]
+    },
+    {
+      "role": "role",
+      "dur": 4,
+      "visual": "The job being done well.",
+      "text": "Role and location",
+      "anim": "words",
+      "transition": "fade"
+    },
+    {
+      "role": "benefit_1",
+      "dur": 4,
+      "visual": "Team moment: training, lunch, celebration.",
+      "text": "First reason to join",
+      "anim": "words",
+      "transition": "slideleft"
+    },
+    {
+      "role": "benefit_2",
+      "dur": 4,
+      "visual": "Growth or stability image.",
+      "text": "Second reason to join",
+      "anim": "words",
+      "transition": "slideleft"
+    },
+    {
+      "role": "cta",
+      "dur": 5,
+      "visual": "Team facing camera or office exterior.",
+      "text": "How to apply",
+      "anim": "pop",
+      "logo": true
+    }
+  ]
+}

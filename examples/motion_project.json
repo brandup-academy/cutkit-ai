@@ -1,0 +1,12 @@
+// Brand intro and outro rendered with HyperFrames (optional: needs Node.js 22+, Chrome and ffprobe).
+// Create the media first:  python3 examples/make_demo_assets.py
+{
+  "out": "out/motion_9x16.mp4",
+  "size": "9:16",
+  "shots": [
+    {"motion": {"title": "BrandUp Academy", "kicker": "AI VIDEO LAB", "subtitle": "Learn AI. Create better content."}, "dur": 3, "zoom": 0},
+    {"src": "demo_assets/clip_b.mp4", "start": 0, "dur": 3, "transition": "fadewhite"},
+    {"motion": {"title": "COMMENT \"AD\"", "kicker": "BRANDUP ACADEMY", "subtitle": "Grow your brand."}, "dur": 3, "zoom": 0, "transition": "fade"}
+  ],
+  "music": {"file": "demo_assets/music.mp3"}
+}

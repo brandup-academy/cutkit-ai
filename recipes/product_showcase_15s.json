@@ -1,0 +1,59 @@
+{
+  "name": "产品展示 15 秒 / Product showcase",
+  "size": "9:16",
+  "use_when": "One physical product, one clear benefit.",
+  "questions": [
+    "Who is it for?",
+    "What is the one benefit to remember?",
+    "What should the viewer do (order, WhatsApp, visit)?"
+  ],
+  "music": "upbeat, modern, confident; no vocals",
+  "beats": [
+    {
+      "role": "hook",
+      "dur": 3,
+      "visual": "The most striking close-up of the product in motion (pour, splash, reveal). No text-heavy shot.",
+      "text": "A 3-5 word question or bold claim",
+      "anim": "typewriter",
+      "fx": [
+        "grade",
+        "flash"
+      ]
+    },
+    {
+      "role": "problem",
+      "dur": 3,
+      "visual": "The moment the customer needs it (tired morning, messy desk).",
+      "text": "Name the pain in 4-6 words",
+      "anim": "words",
+      "transition": "fade"
+    },
+    {
+      "role": "product",
+      "dur": 4,
+      "visual": "Hero shot: product centred, clean background, slow push-in.",
+      "text": "Product name + the one benefit",
+      "anim": "words",
+      "fx": [
+        "grade",
+        "sharpen"
+      ],
+      "transition": "slideleft"
+    },
+    {
+      "role": "proof",
+      "dur": 2.5,
+      "visual": "Someone enjoying or using it; a real-looking result.",
+      "text": "One proof point the owner supplied (optional)",
+      "anim": "highlight"
+    },
+    {
+      "role": "cta",
+      "dur": 2.5,
+      "visual": "Product with brand colours, room for text.",
+      "text": "The call to action from the brand kit",
+      "anim": "pop",
+      "logo": true
+    }
+  ]
+}

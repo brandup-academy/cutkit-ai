@@ -1,0 +1,47 @@
+{
+  "name": "课程活动 15 秒 / Course or event",
+  "size": "9:16",
+  "use_when": "A class, workshop or event with a date.",
+  "questions": [
+    "What will people be able to do after it?",
+    "Date, place and price?",
+    "How to sign up?"
+  ],
+  "music": "energetic, inspiring build; no vocals",
+  "beats": [
+    {
+      "role": "hook",
+      "dur": 3,
+      "visual": "The result people want (a finished ad on a phone, a happy graduate).",
+      "text": "The outcome as a bold line",
+      "anim": "typewriter",
+      "fx": [
+        "grade",
+        "flash"
+      ]
+    },
+    {
+      "role": "what",
+      "dur": 4,
+      "visual": "People learning hands-on, laptops open.",
+      "text": "What they will make or learn",
+      "anim": "words",
+      "transition": "fade"
+    },
+    {
+      "role": "details",
+      "dur": 4,
+      "visual": "Venue or screen recording feel, calm background for text.",
+      "text": "Date, place, price exactly as supplied",
+      "anim": "highlight"
+    },
+    {
+      "role": "cta",
+      "dur": 4,
+      "visual": "Group or instructor, brand colours.",
+      "text": "How to sign up",
+      "anim": "pop",
+      "logo": true
+    }
+  ]
+}

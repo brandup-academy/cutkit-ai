@@ -1,0 +1,64 @@
+{
+  "name": "餐厅促销 15 秒 / Restaurant promo",
+  "size": "9:16",
+  "use_when": "A dish, a deal or an opening.",
+  "questions": [
+    "Which dish or deal?",
+    "Price or offer, and until when?",
+    "Where (area) and how to order or book?"
+  ],
+  "music": "warm, appetising, light groove; no vocals",
+  "beats": [
+    {
+      "role": "hook",
+      "dur": 3,
+      "visual": "Extreme close-up of the food: steam, sizzle, sauce pour, cheese pull.",
+      "text": "Dish name or a craving line",
+      "anim": "typewriter",
+      "fx": [
+        "warm",
+        "grade"
+      ]
+    },
+    {
+      "role": "appetite",
+      "dur": 3.5,
+      "visual": "Second angle: the full plate being served or lifted with chopsticks/fork.",
+      "text": "What makes it special",
+      "anim": "words",
+      "fx": [
+        "warm"
+      ],
+      "transition": "fade"
+    },
+    {
+      "role": "place",
+      "dur": 3,
+      "visual": "The restaurant mood: table, people sharing, lights.",
+      "text": "Place name or area",
+      "anim": "words",
+      "fx": [
+        "warm"
+      ],
+      "transition": "fade"
+    },
+    {
+      "role": "offer",
+      "dur": 3,
+      "visual": "The dish again, composed with space for text.",
+      "text": "The offer and deadline exactly as the owner gave it",
+      "anim": "pop",
+      "fx": [
+        "warm"
+      ]
+    },
+    {
+      "role": "cta",
+      "dur": 2.5,
+      "visual": "Storefront or signature dish.",
+      "text": "How to order or book",
+      "anim": "highlight",
+      "logo": true
+    }
+  ]
+}
