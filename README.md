@@ -1,4 +1,6 @@
-# promo-video-skill
+# cutkit-ai
+
+[![selftest](https://github.com/brandup-academy/cutkit-ai/actions/workflows/test.yml/badge.svg)](https://github.com/brandup-academy/cutkit-ai/actions/workflows/test.yml)
 
 不会剪辑的人，也能用一句话做出一条广告短片：AI 助手写方案，Bloomway 生成画面和声音，这个工具包负责剪辑。
 它也可以单独使用：一个项目文件，做出带字幕、转场、特效、音乐和音效的短视频。底层只有 ffmpeg 和 Python，
@@ -65,7 +67,18 @@ python3 scripts/ad.py build ads/kopi                   # 出片；还没生成�
 选哪个镜头、放在哪一秒，要你或 AI 助手来决定；它负责把决定准确地执行出来，并且可以重复执行。
 
 ## 安装
-需要 Python 3.9+ 和 ffmpeg。
+需要 Python 3.9+。FFmpeg 会随 `imageio-ffmpeg` 自动装好。
+
+**作为 Claude Code skill 安装（推荐）**
+```bash
+# Mac / Linux
+git clone https://github.com/brandup-academy/cutkit-ai.git ~/.claude/skills/promo-video-editing
+# Windows (PowerShell)
+git clone https://github.com/brandup-academy/cutkit-ai.git "$env:USERPROFILE\.claude\skills\promo-video-editing"
+```
+以后更新：在那个文件夹里运行 `git pull`。
+
+**安装依赖**
 ```bash
 pip install pillow numpy imageio-ffmpeg
 pip install faster-whisper   # 只有自动字幕需要
