@@ -5,7 +5,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
+        # macOS is tested by hand for now: in Nov 2026 GitHub's hosted macOS arm64 runners
+        # were not picking up jobs. Add macos-latest back to this list to restore it.
+        os: [windows-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v7
