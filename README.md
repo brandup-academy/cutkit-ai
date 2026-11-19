@@ -63,7 +63,7 @@ python3 scripts/ad.py build ads/kopi                   # 出片；还没生成�
 `prices.example.json` 里是示例价格，请按 Bloomway 当前显示的价格修改。
 
 ## 它不是什么
-它不是 CapCut：没有界面、没有时间线预览、没有贴纸模板、没有自动字幕、没有关键帧动画、没有美颜和抠像。
+它不是 CapCut：没有界面、没有时间线预览、没有贴纸模板、没有关键帧动画、没有美颜和抠像。
 选哪个镜头、放在哪一秒，要你或 AI 助手来决定；它负责把决定准确地执行出来，并且可以重复执行。
 
 ## 安装
@@ -120,12 +120,18 @@ python3 scripts/build.py examples/fx_project.json
 | `AGENTS.md` / `SKILL.md` | 给 Codex / Claude Code 的说明 |
 
 ## 已知范围
-- 在 macOS、ffmpeg 7.1、Python 3.9 上测试过。脚本是纯 Python，没有 shell 脚本；Windows 和 Linux 未实测。
+- 在 macOS、ffmpeg 7.1、Python 3.9 上测试过。脚本是纯 Python，没有 shell 脚本。
+- Windows 和 Ubuntu：每次推送代码，GitHub Actions 会用 Python 3.11 自动运行自测 `scripts/selftest.py`，做出 8 秒演示片、动态文字示例和一句话广告示例，并核对尺寸、时长和声音。自动字幕和品牌片头片尾不在这项自动测试里；Windows 和 Linux 上目前只有这一项测试。
 - 动态文字和所有脚本都是本仓库自己的代码，只依赖 Pillow、numpy 和 ffmpeg，没有打包第三方程序。
 - 品牌片头片尾调用 [HyperFrames](https://github.com/heygen-com/hyperframes)（Apache-2.0），通过 `npx` 在运行时下载，仓库里不包含它。
 - 自动字幕调用 [faster-whisper](https://github.com/SYSTRAN/faster-whisper)（MIT），需要另外安装，仓库里不包含它和语音模型。
 - 字体不随仓库提供。不指定时会找系统里的字体；请使用你有权使用的字体。
 - `check.py` 是测量，不是试听。发布前请自己播放一遍。
+
+### What is tested
+
+Tested on macOS with ffmpeg 7.1 and Python 3.9. On every push, GitHub Actions also runs the self-test (`scripts/selftest.py`) on Windows and Ubuntu with Python 3.11: it builds the 8-second demo, the animated-text example and the one-sentence ad example, then checks size, length and sound.
+Auto subtitles and the brand intro/outro are not part of that automated run, and it is the only testing done on Windows and Linux so far.
 
 ## 配合 Bloomway 使用
 
@@ -158,11 +164,11 @@ Example: [BLOOMWAY RUN](https://bloomway-run.vercel.app), a playable AI film gam
 
 ## 关于
 
-**[BrandUp Academy](https://www.brandupdesignmarketing.com/academy/)** 是马来西亚数字营销公司 BrandUp Design Marketing 旗下的培训品牌，课程由一家正在运营的广告代理公司来教。
-课程是一天的实操课，也可以咨询线上班。旗舰课程 **[AI Commercial Video & TVC Lab](https://www.brandupdesignmarketing.com/academy/ai-video/)** 带学员当天做出一条 15–30 秒的 9:16 竖屏 AI 广告，这个工具包就是同一类工作流的开源版本。
+**[BrandUp Academy](https://www.brandupdesignmarketing.com/zh/academy/)** 是马来西亚广告公司 BrandUp Design Marketing 的培训品牌。这家公司为品牌策划、制作并投放 Facebook 与 Instagram 广告，课程由它的教学团队授课。
+目前有三门课程：**AI 视频与剧情短片大师课**（2 小时，线上直播，US$25）、**AI 视频创作实战课**（4 小时，线下，US$169）和 **AI 视频与营销课程**（6 小时，线下，US$399）。线下课程在马来西亚举行，课程内容和最新费用见[课程页面](https://www.brandupdesignmarketing.com/zh/academy/#courses)。这个工具包是 [AI 广告工具包](https://www.brandupdesignmarketing.com/zh/academy/ai-tools/)流程里"自动剪辑"那一步的开源工具。
 
-**[BrandUp Academy](https://www.brandupdesignmarketing.com/academy/)** is the training arm of BrandUp Design Marketing, a Malaysian agency specialising in Meta Ads and video creative.
-Its courses are one-day, hands-on classes run by a working ad agency; online classes are also available on request. In the flagship **[AI Commercial Video & TVC Lab](https://www.brandupdesignmarketing.com/academy/ai-video/)**, each participant finishes a 15–30 second vertical AI commercial. This toolkit is an open-source take on that kind of workflow.
+**[BrandUp Academy](https://www.brandupdesignmarketing.com/academy/)** is the training brand of BrandUp Design Marketing, a Malaysian ad agency that plans, produces and runs Facebook and Instagram advertising for brands. Its courses are taught by the agency's teaching team.
+There are three courses: the **AI Video & Short Drama Masterclass** (2 hours, live online, US$25), the **AI Video Creation Course** (4 hours, in person, US$169) and the **AI Video & Marketing Course** (6 hours, in person, US$399). In-person classes are held in Malaysia; the syllabus and current fees are on the [course page](https://www.brandupdesignmarketing.com/academy/#courses). This toolkit is the open-source auto-editing step of the workflow on the [AI Ad Toolkit](https://www.brandupdesignmarketing.com/academy/ai-tools/) page.
 
 *Learn AI. Create better content. Grow your brand.*
 
