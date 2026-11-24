@@ -165,10 +165,10 @@ Example: [BLOOMWAY RUN](https://bloomway-run.vercel.app), a playable AI film gam
 ## 关于
 
 **[BrandUp Academy](https://www.brandupdesignmarketing.com/zh/academy/)** 是马来西亚广告公司 BrandUp Design Marketing 的培训品牌。这家公司为品牌策划、制作并投放 Facebook 与 Instagram 广告，课程由它的教学团队授课。
-目前有三门课程：**AI 视频与剧情短片大师课**（2 小时，线上直播，US$25）、**AI 视频创作实战课**（4 小时，线下，US$169）和 **AI 视频与营销课程**（6 小时，线下，US$399）。线下课程在马来西亚举行，课程内容和最新费用见[课程页面](https://www.brandupdesignmarketing.com/zh/academy/#courses)。这个工具包是 [AI 广告工具包](https://www.brandupdesignmarketing.com/zh/academy/ai-tools/)流程里"自动剪辑"那一步的开源工具。
+学院目前只提供线上课程：**AI 视频与剧情短片大师课**（2 小时，线上，US$25），附学员版课件 PDF 与 Prompt 模板。课程内容见[课程页面](https://www.brandupdesignmarketing.com/zh/academy/#courses)。这个工具包是 [AI 广告工具包](https://www.brandupdesignmarketing.com/zh/academy/ai-tools/)流程里"自动剪辑"那一步的开源工具。
 
 **[BrandUp Academy](https://www.brandupdesignmarketing.com/academy/)** is the training brand of BrandUp Design Marketing, a Malaysian ad agency that plans, produces and runs Facebook and Instagram advertising for brands. Its courses are taught by the agency's teaching team.
-There are three courses: the **AI Video & Short Drama Masterclass** (2 hours, live online, US$25), the **AI Video Creation Course** (4 hours, in person, US$169) and the **AI Video & Marketing Course** (6 hours, in person, US$399). In-person classes are held in Malaysia; the syllabus and current fees are on the [course page](https://www.brandupdesignmarketing.com/academy/#courses). This toolkit is the open-source auto-editing step of the workflow on the [AI Ad Toolkit](https://www.brandupdesignmarketing.com/academy/ai-tools/) page.
+The Academy is online only. Its course is the **AI Video & Short Drama Masterclass** (2 hours, online, US$25), with a student PDF of the slides and prompt templates; the syllabus is on the [course page](https://www.brandupdesignmarketing.com/academy/#courses). This toolkit is the open-source auto-editing step of the workflow on the [AI Ad Toolkit](https://www.brandupdesignmarketing.com/academy/ai-tools/) page.
 
 *Learn AI. Create better content. Grow your brand.*
 
