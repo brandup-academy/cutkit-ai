@@ -1,4 +1,4 @@
-# cutkit-ai
+# CutKit
 
 [![selftest](https://github.com/brandup-academy/cutkit-ai/actions/workflows/test.yml/badge.svg)](https://github.com/brandup-academy/cutkit-ai/actions/workflows/test.yml)
 
@@ -72,11 +72,12 @@ python3 scripts/ad.py build ads/kopi                   # 出片；还没生成�
 **作为 Claude Code skill 安装（推荐）**
 ```bash
 # Mac / Linux
-git clone https://github.com/brandup-academy/cutkit-ai.git ~/.claude/skills/promo-video-editing
+git clone https://github.com/brandup-academy/cutkit-ai.git ~/.claude/skills/cutkit-ai
 # Windows (PowerShell)
-git clone https://github.com/brandup-academy/cutkit-ai.git "$env:USERPROFILE\.claude\skills\promo-video-editing"
+git clone https://github.com/brandup-academy/cutkit-ai.git "$env:USERPROFILE\.claude\skills\cutkit-ai"
 ```
 以后更新：在那个文件夹里运行 `git pull`。
+以前装在 `promo-video-editing` 文件夹的，可以照常使用和更新，或者把文件夹改名为 `cutkit-ai`。
 
 **安装依赖**
 ```bash
@@ -132,6 +133,16 @@ python3 scripts/build.py examples/fx_project.json
 
 Tested on macOS with ffmpeg 7.1 and Python 3.9. On every push, GitHub Actions also runs the self-test (`scripts/selftest.py`) on Windows and Ubuntu with Python 3.11: it builds the 8-second demo, the animated-text example and the one-sentence ad example, then checks size, length and sound.
 Auto subtitles and the brand intro/outro are not part of that automated run, and it is the only testing done on Windows and Linux so far.
+
+## 第三方许可与发布流程 / Third-party licenses and publishing
+
+CutKit 的代码使用 [MIT 许可证](LICENSE)。另行分发第三方组件时，请按实际分发版本核对其条款。例如，分发 HyperFrames 时须附上 Apache-2.0 许可证，保留适用的版权和 NOTICE 声明，并在改动过的文件中注明修改。分发 FFmpeg 时还要核对该构建启用的编解码器及相应许可。[HyperFrames 许可证](https://github.com/heygen-com/hyperframes/blob/main/LICENSE) · [FFmpeg 许可说明](https://ffmpeg.org/legal.html)
+
+[Hypit](https://github.com/hypit-ai/hypit/blob/main/LICENSE) 是可供团队另行评估的工具。其许可允许内部制作和为客户制作成片。为商业利益向第三方提供 Hypit 或其衍生软件（含随付费产品打包），或向第三方托管提供其功能，须事先取得 Hypit.AI 书面商业授权。交付成片时，素材权利和第三方生成服务条款仍然适用。
+
+当前交付物是导出的视频。发布前，由账号负责人看完成片、试听声音、核对字幕与素材使用权，再确认并手动发布。Instagram 账号更新追踪和 API 发布属于后续规划。
+
+CutKit code is licensed under [MIT](LICENSE). For redistribution, check each component's license for the version you ship. HyperFrames requires the Apache-2.0 license, applicable notices and a notice in modified files. FFmpeg's terms depend on its build. Hypit's license permits internal and client video production and requires prior written commercial authorization for commercial redistribution or third-party hosting of its functionality. Rights in source material and third-party model terms still apply. The current workflow ends with a video export for the account owner to review, listen to and publish manually. Instagram monitoring and API publishing are planned features.
 
 ## 配合 Bloomway 使用
 

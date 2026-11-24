@@ -1,5 +1,5 @@
 ---
-name: promo-video-editing
+name: cutkit-ai
 description: Make and edit short video ads and promo videos with ffmpeg - one-sentence ad workflow (recipe, storyboard, cost quote, Bloomway assets), 9:16 or 16:9 cuts, effects, transitions, animated text, auto subtitles, brand intro/outro, music and per-shot sound effects. Use when asked to make an ad from a sentence, or to cut, re-cut, caption, add text, effects or sound to a promo, trailer, hook or social video.
 ---
 
