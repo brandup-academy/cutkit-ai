@@ -15,7 +15,7 @@ A project is one JSON file. Paths are relative to that file. Lines starting with
 | `font`, `cjk_font` | system font | font files for Latin text and for Chinese/Japanese/Korean text |
 | `font_index` | 0 | face inside a `.ttc` collection |
 | `accent` | `#B0F03E` | colour of `[[highlighted]]` words |
-| `margin` | 180 px per 1080 width | safe margin on each side for text |
+| `margin` | 90 px per 1080 width | safe margin on each side for text |
 | `logo` | none | `{"file", "width": 0.22, "pos": "top-center", "from", "to"}`; width is a fraction of the frame, pos is `top|center|bottom`-`left|center|right` |
 | `captions` | none | `{"file": "captions.json", "anim": "highlight", "offset": 0, "font_size", "y", "accent"}`; captions from `scripts/captions.py`, timed per word. `offset` shifts them if the audio starts later in the video |
 | `music` | none | `{"file", "start", "volume"}` |
@@ -48,7 +48,7 @@ A transition overlaps two shots, so the video gets shorter by the transition's l
 |---|---|---|
 | `lines` | required | list of text lines; `[[words]]` use the accent colour |
 | `from`, `to` | required | when it shows, seconds |
-| `font_size` | 72 at 1080 wide | starting size; shrinks until the line fits the safe width |
+| `font_size` | 72 at 1080 wide | starting size; if any line is too wide for the safe width, every line of that card shrinks to the same size |
 | `y` | 61% of height | top of the first line, pixels |
 | `anim` | `fade` | `fade`, `slide_up`, `slide_down`, or animated text: `typewriter`, `words`, `highlight`, `pop` |
 | `reveal` | automatic | seconds the animated reveal takes; it always ends before the card does |

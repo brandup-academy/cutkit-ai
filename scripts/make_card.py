@@ -28,25 +28,38 @@ def layout(lines, size=(1080, 1920), font=None, cjk_font=None, font_index=0, fon
     """Place every character. Returns a list of dicts: ch, x, y, path, idx, sz, fill, word, line, w.
     `word` numbers the words in reading order (-1 for spaces); each CJK character counts as a word."""
     W, H = size
-    margin = round(W * 180 / 1080) if margin is None else margin
+    margin = round(W * 90 / 1080) if margin is None else margin
     max_w = W - 2 * margin
     font = font or find_font()
     cjk_font = cjk_font or find_font(cjk=True) or font
     d = ImageDraw.Draw(Image.new("RGBA", (8, 8)))
     y = round(H * 0.61) if y is None else y
-    items, wid = [], -1
-    for li, line in enumerate(lines):
+
+    def _split(line):
         is_cjk = bool(_CJK_RE.search(line))
         path, idx = (cjk_font, 0) if is_cjk else (font, font_index)
-        parts = [(t, bool(i % 2)) for i, t in enumerate(re.split(r"\[\[|\]\]", line)) if t]
+        return path, idx, [(t, bool(i % 2)) for i, t in enumerate(re.split(r"\[\[|\]\]", line)) if t]
+
+    def _fit(path, idx, parts):
+        """Largest size (<= font_size) and spacing at which this line fits max_w."""
         sz, sp = font_size, float(spacing)
         while True:
             f = _load(path, sz, idx)
             w = sum(d.textlength(c, font=f) + sp for t, _ in parts for c in t) - sp
             if w <= max_w or sz <= 18:
-                break
+                return sz, sp
             sz -= 2
             sp = max(2.0, sp - 0.3)
+
+    # every line of a card uses the same size: the size the longest line fits at
+    split = [_split(line) for line in lines]
+    fits = [_fit(*s) for s in split]
+    common = min((f for f in fits), default=(font_size, float(spacing)), key=lambda f: f[0])
+    items, wid = [], -1
+    for li, (path, idx, parts) in enumerate(split):
+        sz, sp = common
+        f = _load(path, sz, idx)
+        w = sum(d.textlength(c, font=f) + sp for t, _ in parts for c in t) - sp
         x = (W - w) / 2
         is_open = False
         for t, acc in parts:
