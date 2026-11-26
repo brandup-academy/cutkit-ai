@@ -12,10 +12,10 @@
     {"lines": ["THIS IS A [[DEMO]]", "一句话，做一条短片"], "from": 0.4, "to": 2.8},
     {"lines": ["COMMENT [[\"PLAY\"]]"], "from": 5.8, "to": 7.8}
   ],
-  "music": {"file": "demo_assets/music.mp3", "start": 2},
+  "music": {"file": "demo_assets/music.wav", "start": 2},
   "sfx_dir": "demo_assets/sfx",
   "cues": [
-    {"file": "boom.mp3", "at": 3.0},
-    {"file": "chime.mp3", "at": 5.5, "gain": 1.2}
+    {"file": "boom.wav", "at": 3.0},
+    {"file": "chime.wav", "at": 5.5, "gain": 1.2}
   ]
 }

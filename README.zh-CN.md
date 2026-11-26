@@ -6,11 +6,11 @@
 
 不会剪辑的人，也能用一句话做出一条广告短片：AI 助手写方案，Bloomway 生成画面和声音，这个工具包负责剪辑。
 它也可以单独使用：一个项目文件，做出带字幕、转场、特效、音乐和音效的短视频。底层只有 ffmpeg 和 Python，
-所以 Claude Code、Codex 或你自己敲命令都能用。除了下面这张预览图，仓库里不含任何画面、音乐或字体。
+所以 Claude Code、Codex 或你自己敲命令都能用。除了下面两张预览图，仓库里不含任何画面、音乐或字体。
 
-<img src="docs/media/cutkit-demo.gif" width="240" alt="CutKit 剪出的 14 秒竖屏咖啡广告：五个镜头加打字机字幕">
+<img src="docs/media/cutkit-showreel.gif" height="292" alt="CutKit 剪出的 16:9 AI 展示片"> <img src="docs/media/cutkit-demo.gif" height="292" alt="CutKit 剪出的 14 秒竖屏咖啡广告：五个镜头加打字机字幕">
 
-*CutKit 用一个项目文件剪出的 14 秒广告：五个镜头、打字机字幕、配乐和音效。Kopi Pagi 是虚构品牌，画面由 AI 生成。*
+*左：16:9 展示片。右：14 秒 9:16 产品广告。两条都是 CutKit 各用一个项目文件剪出来的：镜头、字幕、配乐和音效。画面由 AI 生成，Kopi Pagi 是虚构品牌。*
 
 ## 它能做什么
 | 能力 | 说明 |

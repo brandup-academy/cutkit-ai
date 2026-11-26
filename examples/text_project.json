@@ -15,5 +15,5 @@
     {"lines": ["SAY IT. SEE IT. SHIP IT."], "from": 6.2, "to": 8.8, "anim": "highlight"},
     {"lines": ["[[50% OFF]]", "TODAY ONLY"], "from": 9.2, "to": 11.8, "anim": "pop", "font_size": 110}
   ],
-  "music": {"file": "demo_assets/music.mp3"}
+  "music": {"file": "demo_assets/music.wav"}
 }

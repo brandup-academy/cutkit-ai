@@ -14,7 +14,7 @@
     {"lines": ["EFFECTS [[DEMO]]"], "from": 0.3, "to": 1.8, "anim": "slide_up"},
     {"lines": ["转场 · 调色 · [[抖动]]"], "from": 4.0, "to": 6.0, "anim": "slide_down", "accent": "#FFD23E"}
   ],
-  "music": {"file": "demo_assets/music.mp3"},
+  "music": {"file": "demo_assets/music.wav"},
   "sfx_dir": "demo_assets/sfx",
-  "cues": [{"file": "boom.mp3", "at": 1.6}, {"file": "chime.mp3", "at": 5.3}]
+  "cues": [{"file": "boom.wav", "at": 1.6}, {"file": "chime.wav", "at": 5.3}]
 }

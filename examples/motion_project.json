@@ -8,5 +8,5 @@
     {"src": "demo_assets/clip_b.mp4", "start": 0, "dur": 3, "transition": "fadewhite"},
     {"motion": {"title": "COMMENT \"AD\"", "kicker": "BRANDUP ACADEMY", "subtitle": "Grow your brand."}, "dur": 3, "zoom": 0, "transition": "fade"}
   ],
-  "music": {"file": "demo_assets/music.mp3"}
+  "music": {"file": "demo_assets/music.wav"}
 }

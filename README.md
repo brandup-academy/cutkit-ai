@@ -7,9 +7,9 @@ English · [中文](README.zh-CN.md)
 **Make a short video ad from one sentence, with Claude Code or Codex doing the editing.**
 The AI assistant writes the plan, you generate the shots, and CutKit cuts them into a finished ad with captions, transitions, music and sound effects. It is plain ffmpeg and Python, so it also works from the command line on its own.
 
-<img src="docs/media/cutkit-demo.gif" width="240" alt="A 14-second vertical coffee ad built by CutKit: five shots with typewriter captions">
+<img src="docs/media/cutkit-showreel.gif" height="292" alt="A 16:9 AI showreel cut by CutKit, with captions such as NO CAMERA. NO CREW."> <img src="docs/media/cutkit-demo.gif" height="292" alt="A 14-second vertical coffee ad built by CutKit: five shots with typewriter captions">
 
-*A 14-second ad built by CutKit from one project file: five shots, typewriter captions, music and sound effects. Kopi Pagi is a made-up brand and the footage is AI-generated.*
+*Left: a 16:9 showreel. Right: a 14-second 9:16 product ad. Each was cut by CutKit from one project file: shots, captions, music and sound effects. The footage is AI-generated, and Kopi Pagi is a made-up brand.*
 
 ## Quick start
 
@@ -131,7 +131,7 @@ Auto subtitles and the brand intro/outro are not part of that automated run, and
 - The animated text and all scripts are this repository's own code and depend only on Pillow, numpy and ffmpeg. No third-party programs are bundled.
 - Brand intro and outro call [HyperFrames](https://github.com/heygen-com/hyperframes) (Apache-2.0), downloaded at run time through `npx`. It is not included in this repository.
 - Auto subtitles call [faster-whisper](https://github.com/SYSTRAN/faster-whisper) (MIT), installed separately. It and its speech models are not included.
-- Apart from the preview image above, no footage, music or fonts are bundled. Without a font setting, CutKit looks for a system font; use fonts you have the right to use.
+- Apart from the two preview images above, no footage, music or fonts are bundled. Without a font setting, CutKit looks for a system font; use fonts you have the right to use.
 - `check.py` measures; it does not listen. Play the video yourself before you publish.
 
 ## Using it with Bloomway

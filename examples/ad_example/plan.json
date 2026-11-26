@@ -11,7 +11,7 @@
   },
   "music": {
     "prompt": "upbeat, modern, confident; no vocals",
-    "file": "assets/music.mp3"
+    "file": "assets/music.wav"
   },
   "beats": [
     {
@@ -37,7 +37,7 @@
       "storyboard": "assets/b1.jpg",
       "file": "assets/b1.mp4",
       "vo_file": "assets/b1_vo.mp3",
-      "sfx_file": "assets/b1_sfx.mp3"
+      "sfx_file": "assets/b1_sfx.wav"
     },
     {
       "id": "b2",
@@ -134,7 +134,7 @@
       "storyboard": "assets/b5.jpg",
       "file": "assets/b5.mp4",
       "vo_file": "assets/b5_vo.mp3",
-      "sfx_file": "assets/b5_sfx.mp3"
+      "sfx_file": "assets/b5_sfx.wav"
     }
   ],
   "_note": "A made-up product, written to show what a finished plan looks like."
