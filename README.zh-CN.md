@@ -153,7 +153,7 @@ CutKit 的代码使用 [MIT 许可证](LICENSE)。另行分发第三方组件时
 | 4. 成片 | `scripts/build.py` 一个项目文件出片，`scripts/check.py` 检查 | 9:16 或 16:9 成片 |
 
 World Director 做的是预演用的低模画面，不是最终成片；最终画面在 Bloomway 里生成。使用 Bloomway 生成的内容请遵守 Bloomway 的使用条款。
-本页的 Bloomway 链接是 BrandUp 的推荐链接：通过它注册，我们会获得推荐奖励，你的价格不变。
+本页的 Bloomway 链接是 BrandUp 的推荐链接：通过它注册，第一次付费目前可减 9%；我们可能获得佣金。
 
 **案例：** [BLOOMWAY RUN](https://bloomway-run.vercel.app) 是一个能玩的 AI 电影游戏，画面和配乐由 Bloomway 生成，宣传片用这套流程剪辑和配音效。
 

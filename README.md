@@ -144,7 +144,7 @@ This toolkit does the editing. Footage, music and sound effects can come from [B
 4. **Assemble** with `scripts/build.py` and verify with `scripts/check.py`.
 
 World Director produces blockout previs, not final footage. Follow Bloomway's terms of use for generated content.
-The Bloomway links on this page are BrandUp's referral link: we get a reward if you sign up through it; your price is the same.
+The Bloomway links on this page are BrandUp's referral link: sign up through it and Bloomway currently takes 9% off your first purchase; we may earn a commission.
 Example: [BLOOMWAY RUN](https://bloomway-run.vercel.app), a playable AI film game whose visuals and music were generated with Bloomway; its trailers were cut and sound-designed with this workflow.
 
 ## Third-party licenses and publishing
